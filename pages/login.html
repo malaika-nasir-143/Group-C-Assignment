@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OM Hospital | Login</title>
+    <link rel="stylesheet" href="Group-C-Assignment\css\style1.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center">Login</h2>
+        <form id="loginForm">
+
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" id="loginEmail" required>
+                <span class="error" id="loginEmailError"></span>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Password</label>
+                <input type="password" class="form-control" id="loginPassword" required>
+                <span class="error" id="loginPasswordError"></span>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Login</button>
+        </form>
+        <p class="text-center mt-3">
+            Don't have an account? <a href="reg.html">Create an account</a>
+        </p>
+        
+        <p class="success-message" id="loginSuccessMessage">Login successful!</p>
+    </div>
+
+    <script>
+        function redirectToRegister() {
+            window.location.href = "reg.html";
+        }
+
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            let email = document.getElementById('loginEmail').value.trim();
+            let password = document.getElementById('loginPassword').value;
+
+            document.getElementById('loginEmailError').textContent = email ? '' : 'Email is required';
+            document.getElementById('loginPasswordError').textContent = password ? '' : 'Password is required';
+
+            if (email && password) {
+                document.getElementById('loginSuccessMessage').style.display = 'block';
+                setTimeout(() => {
+                    document.getElementById('loginSuccessMessage').style.display = 'none';
+                    window.location.href = "dashboard.html"; // Redirect after login (update as needed)
+                }, 2000);
+            }
+        });
+    </script>
+</body>
+</html>
