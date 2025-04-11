@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            width: 100%;
+            height: 50vh;
+            background: url('hospital-banner-doctors-staff-14949021.webp') no-repeat center center/cover;
+            position: relative;
+        }
+        .container {
+            width: 35%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+            margin-top: -10%;
+            position: relative;
+            z-index: 2;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        label {  
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 90%;
+            padding: 10px;
+            margin: 5px ;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+        .info-section {
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+            margin-top: 20px;
+            margin-right: 10px;
+            margin-left: 10px ;
+        }
+
+        .contact-info, .map-container {
+            width: 48%;
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header"></div>
+
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="deca50b0-5e76-42a8-93fc-d789f43f6507">
+            
+            <input type="text" placeholder="Enter your name" name="name" required>
+            <input type="email" placeholder="email123@gmail.com" name="email" required>
+            <textarea name="message" placeholder="Enter your message" required></textarea>
+            
+            <input type="hidden" name="redirect" value="http://127.0.0.1:5500/successfull.html"> 
+            <button type="submit">Submit Form</button>
+        </form>
+    </div>
+
+    <div class="info-section">
+        <div class="contact-info">
+            <h3>Our Address</h3>
+            <p>123 Health Street, London, UK</p>
+            <p>Phone: +44 20 1234 5678</p>
+            <p>Email: info@hospital.com</p>
+        </div>
+        <div class="map-container">
+            <h3>Find Us</h3>
+            <iframe width="100%" height="250" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2139.853615292652!2d-0.1115873!3d51.5225942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b9d7b55bb23%3A0x9c68003da5dd78d7!2sUniversity%20of%20ulster!5e1!3m2!1sen!2suk!4v1743762591924!5m2!1sen!2suk" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <div class="footer">
+        All rights reserved to Martin.
+    </div>
+</body>
+</html>
