@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an Appointment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* Light blue background for a calm look */
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+            margin-top: 50px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 20px 0; /* Added more space below each element */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-group {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+        .footer-banner {
+            background-color: #ffeb3b; /* Yellow background for the banner */
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Book an Appointment</h2>
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="deca50b0-5e76-42a8-93fc-d789f43f6507">
+
+            
+            <input type="text" placeholder="Enter your name" name="name" required>
+            <input type="email" placeholder="email123@gmail.com" name="email" required>
+
+            <div class="form-group">
+                
+                <input type="date" name="appointment_date" required>
+                <select name="appointment_time" required>
+                    <option value="" disabled selected>Select a Time</option>
+                    <option value="09:00 AM">09:00 AM</option>
+                    <option value="10:00 AM">10:00 AM</option>
+                    <option value="11:00 AM">11:00 AM</option>
+                    <option value="12:00 PM">12:00 PM</option>
+                    <option value="01:00 PM">01:00 PM</option>
+                    <option value="02:00 PM">02:00 PM</option>
+                    <option value="03:00 PM">03:00 PM</option>
+                    <option value="04:00 PM">04:00 PM</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <!-- Doctor and Disease fields side by side -->
+                <select name="doctor" required>
+                    <option value="" disabled selected>Select a Doctor</option>
+                    <option value="Dr. Ganesh">Dr. Ganesh</option>
+                    <option value="Dr. Nishan">Dr. Nishan</option>
+                    <option value="Dr. Malika">Dr. Malika</option>
+                    <option value="Dr. ali">Dr. ALi</option>
+                </select>
+
+                <select name="disease" required>
+                    <option value="" disabled selected>Select Disease Type</option>
+                    <option value="Cold & Flu">Cold & Flu</option>
+                    <option value="Allergy">Allergy</option>
+                    <option value="Diabetes">Diabetes</option>
+                    <option value="Heart Disease">Heart Disease</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <textarea name="message" placeholder="Enter your message" required></textarea>
+
+            <input type="hidden" name="redirect" value="http://127.0.0.1:5500/successfull.html"> 
+            <button type="submit">Submit Form</button>
+        </form>
+    </div>
+
+    
+    <div class="footer-banner">
+        <p>For more information, contact us at: +44 20 1234 5678</p>
+        <p>Address: 123 Health Street, London, UK</p>
+    </div>
+
+    <div class="footer">
+        All rights reserved to Martin.
+    </div>
+</body>
+</html>
