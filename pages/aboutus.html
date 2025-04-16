@@ -5,12 +5,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hospital About Us Page</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   
-  <link rel="stylesheet" href="C:\Users\Acer\Desktop\group assignment\Group-C-Assignment\css\aboutus.css">
+  <link rel="stylesheet" href="../assets/css/footer.css">
+  <link rel="stylesheet" href="../assets/css/header.css">
+  <link rel="stylesheet" href="../assets/css/aboutus.css">
 </head>
 <body>
+
+  <!-- Top Contact Bar -->
+  <div class="top-bar bg-light py-1 px-3 d-flex justify-content-start align-items-center border-bottom">
+    <small class="me-4 text-dark"><i class="fas fa-envelope me-1"></i> Email: ffh@gmail.com</small>
+    <small class="text-dark"><i class="fas fa-phone-alt me-1"></i> Contact no : 88666 00555</small>
+  </div>
+
+  <!-- Logo and Navbar -->
+  <header class="shadow-sm">
+    <div class="container-fluid bg-white">
+      <div class="d-flex flex-column align-items-left pt-3">
+        <h1 class="logo-text text-success fw-bold">Fauji Foundation Hospital</h1>
+      </div>
+
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light mt-2">
+        <div class="container justify-content-center">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 gap-3">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aboutus.html">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">DOCTORS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CONTACT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">REGISTRATION</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">LOGIN</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">BOOK APPOINTMENT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
+ 
   <div class="container py-5">
     <!-- Hero Section -->
     <section id="heroSection" class="hero bg-gradient-to-r p-5 rounded-3 shadow-lg mb-5">
@@ -18,7 +79,7 @@
       <div class="row align-items-center">
         <div class="col-md-6 text-center text-md-start">
           <h1 class="display-4 font-weight-bold text-white">Excellence in Healthcare Since 1995</h1>
-          <p class="lead text-white mb-4">At Fauji Foundation Hospital, we combine advanced medical technology with compassionate care to serve our community with excellence.</p>
+          <p class="lead text-white mb-4">Fauji Foundation Hospital is a well-equipped healthcare facility offering quality medical services through advanced technology and skilled professionals. With a focus on patient care, it provides a wide range of services in a clean, safe, and supportive environment.</p>
           <div class="d-flex gap-3 justify-content-center justify-content-md-start">
             <!-- Button for Contact Our Team -->
             <a href="#contact" class="btn btn-outline-light btn-lg" id="contactBtn">
@@ -32,7 +93,7 @@
           </div>
         </div>
         <div class="col-md-6 text-center">
-          <img src="C:\Users\Acer\Desktop\hospital-building-modern-parking-lot-59693686.webp" alt="Hero Image" class="img-fluid rounded-3">
+          <img src="C:\Users\Acer\Desktop\group assignment\Group-C-Assignment\assets\image\fauji foundation Hospital.png" alt="Hero Image" class="img-fluid rounded-3">
         </div>
       </div>
     </section>
@@ -41,25 +102,25 @@
     <section class="stats mb-5">
       <div class="row text-center">
         <div class="col-md-3">
-          <div class="card shadow-sm rounded-3 p-3">
+          <div class="card shadow-sm rounded-3 p-3" data-bs-toggle="tooltip" title="Trusted by the community for over 25 years.">
             <h2 class="display-4 text-primary">25+</h2>
             <p class="lead text-muted">Years Serving Community</p>
           </div>
         </div>
         <div class="col-md-3">
-          <div class="card shadow-sm rounded-3 p-3">
+          <div class="card shadow-sm rounded-3 p-3" data-bs-toggle="tooltip" title="Equipped with 200+ licensed beds to serve patients.">
             <h2 class="display-4 text-primary">200+</h2>
             <p class="lead text-muted">Licensed Beds</p>
           </div>
         </div>
         <div class="col-md-3">
-          <div class="card shadow-sm rounded-3 p-3">
+          <div class="card shadow-sm rounded-3 p-3" data-bs-toggle="tooltip" title="Skilled professionals committed to patient care.">
             <h2 class="display-4 text-primary">500+</h2>
             <p class="lead text-muted">Healthcare Professionals</p>
           </div>
         </div>
         <div class="col-md-3">
-          <div class="card shadow-sm rounded-3 p-3">
+          <div class="card shadow-sm rounded-3 p-3" data-bs-toggle="tooltip" title="Our patients consistently rate their experience highly.">
             <h2 class="display-4 text-primary">98%</h2>
             <p class="lead text-muted">Patient Satisfaction</p>
           </div>
@@ -68,33 +129,107 @@
     </section>
 
     <!-- Core Values Section -->
-    <section id="coreValues" class="core-values mb-5">
-      <h2 class="text-center font-weight-bold mb-4">Our Core Values</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card shadow-sm mb-4 p-4 text-center">
-            <i class="bi bi-heart-fill text-danger fs-1"></i>
-            <h3 class="mt-3">Compassion</h3>
-            <p class="text-muted">We treat every patient with empathy and kindness, understanding that healthcare is deeply personal.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card shadow-sm mb-4 p-4 text-center">
-            <i class="bi bi-shield-lock-fill text-primary fs-1"></i>
-            <h3 class="mt-3">Safety</h3>
-            <p class="text-muted">Patient safety guides every decision we make, from treatment protocols to facility design.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card shadow-sm mb-4 p-4 text-center">
-            <i class="bi bi-person-fill text-success fs-1"></i>
-            <h3 class="mt-3">Collaboration</h3>
-            <p class="text-muted">Our multidisciplinary teams work together to provide comprehensive and coordinated care to the patient.</p>
-          </div>
-        </div>
+<section id="coreValues" class="core-values mb-5">
+  <h2 class="text-center font-weight-bold mb-4">Our Core Values</h2>
+  <div class="row">
+    <!-- Compassion -->
+    <div class="col-md-4">
+      <div class="card shadow-sm mb-4 p-4 text-center h-100" data-bs-toggle="tooltip" title="We always lead with heart.">
+        <i class="bi bi-heart-fill text-danger fs-1"></i>
+        <h3 class="mt-3">Compassion</h3>
+        <p class="text-muted">We treat every patient with empathy and kindness, understanding that healthcare is deeply personal.</p>
       </div>
-      
-    </section>
+    </div>
+    <!-- Safety -->
+    <div class="col-md-4">
+      <div class="card shadow-sm mb-4 p-4 text-center h-100" data-bs-toggle="tooltip" title="Patient safety is our top priority.">
+        <i class="bi bi-shield-lock-fill text-primary fs-1"></i>
+        <h3 class="mt-3">Safety</h3>
+        <p class="text-muted">Patient safety guides every decision we make, from treatment protocols to facility design.</p>
+      </div>
+    </div>
+    <!-- Collaboration -->
+    <div class="col-md-4">
+      <div class="card shadow-sm mb-4 p-4 text-center h-100" data-bs-toggle="tooltip" title="Teamwork for better outcomes.">
+        <i class="bi bi-person-fill text-success fs-1"></i>
+        <h3 class="mt-3">Collaboration</h3>
+        <p class="text-muted">Our multidisciplinary teams work together to provide comprehensive and coordinated care to the patient.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Latest Technology Section -->
+<section class="latest-tech-section container my-5 p-4 rounded shadow">
+  <div class="row align-items-center">
+    <!-- Left Content -->
+    <div class="col-md-6">
+      <h2 class="mb-3 text-primary">The Latest Technology</h2>
+      <p class="lead">
+        At Fauji Foundation Hospital, our multidisciplinary medical teams are equipped with some of the most cutting-edge technology available in modern healthcare. Our operating theatres feature advanced systems such as ultrasonic surgical aspirators, the ROSA© robotic assistant, and real-time neuronavigation tools. Since early 2019, we have also integrated the ZEISS KINOVO surgical microscope and intraoperative MRI, enhancing the precision and safety of complex procedures.
+      </p>
+      <p>
+        Our commitment to non-invasive care is evident through the use of technologies like the Icon Gamma Knife and the Visualase® laser system. These innovations, operated by our world-class consultants with exceptional clinical judgment, enable us to deliver accurate, minimally invasive treatments that promote better recovery and improved outcomes for every patient.
+      </p>
+    </div>
+
+    <!-- Right Image -->
+    <div class="col-md-6 text-center">
+      <img src="../assets/image/csm_CeramTec-Medical-Equipment-surgery-room_e851ad4126.jpg" alt="Advanced Medical Technology" class="img-fluid rounded tech-img">
+    </div>
+  </div>
+</section>
+
+
+<!-- Future of Patient Care Section -->
+<section class="latest-tech-section container my-5 p-4 rounded shadow">
+  <div class="row align-items-center">
+    <!-- Left Image -->
+    <div class="col-md-6 text-center">
+      <img src="../assets/image/neuro.jpg" alt="Future of Neurosurgical Care" class="img-fluid rounded tech-img">
+    </div>
+
+    <!-- Right Content -->
+    <div class="col-md-6">
+      <h2 class="mb-3 text-primary">Future of Patient Care</h2>
+      <p class="lead">
+        We are committed to end-to-end, personalised care for our patients using cutting-edge neurosurgical interventions.
+      </p>
+      <p>
+        At Fauji Foundation Hospital, Professor Nishan Khadka, consultant neurosurgeon, explores innovations in neuroscience for cancer and tumour treatment, including trials for a ground-breaking vaccine and his expertise in Visualase™, a minimally invasive keyhole procedure.
+      </p>
+      <blockquote class="italic">
+        “The more we understand, the more personalised and targeted treatments we can produce. Even if I wasn’t a neurosurgeon, I would still be working in the field of neuroscience – the brain is the most fascinating entity on the planet.”
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- Looking beyond surgery -->
+<section class="latest-tech-section container my-5 p-4 rounded shadow">
+  <div class="row align-items-center">
+    <!-- Left Content -->
+    <div class="col-md-6">
+      <h2 class="mb-3 text-primary">Looking beyond your surgery</h2>
+      <p class="lead">
+        Looking beyond your surgery — Rehabilitation is an integral part of your recovery. The Rehabilitation Centre at Fauji Foundation Hospital is home to the only CARF-accredited, hospital-based rehabilitation centre in London and the largest private unit of its kind in the india.
+      </p>
+      <p>
+        Our multidisciplinary team of consultants, who are sub-specialists in the range of neurological conditions, together with our specialist nurses, neurophysiotherapists, neuropsychologists, speech and language therapists, and occupational therapists, create a rehabilitation programme designed around your personal goals.
+      </p>
+    </div>
+
+    <!-- Right Image -->
+    <div class="col-md-6 text-center">
+      <img src="../assets/image/rehabitation.png" alt="Advanced Medical Technology" class="img-fluid rounded tech-img">
+    </div>
+  </div>
+</section>
+
+
+
+
+
 
     <!-- Contact Section -->
     <section id="contact" class="contact mb-5"></section>
@@ -137,35 +272,78 @@
       
     </section>
 
-    <!-- Footer Section -->
-    <footer class="text-center bg-dark py-3">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <h5>Contact Information</h5>
-            <p><strong>Hospital Phone:</strong> +123 456 7890</p>
-            <p><strong>Emergency Number:</strong> +123 999 8888</p>
-            <p><strong>Email:</strong> contact@hospital.com</p>
-          </div>
-          <div class="col-md-4">
-            <h5>Quick Links</h5>
-            <ul class="list-unstyled">
-              <li><a href="#heroSection">Home</a></li>
-              <li><a href="#coreValues">Our Core Values</a></li>
-              <li><a href="#contact">Contact Us</a></li>
-              <li><a href="#virtualTour">Virtual Tour</a></li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h5>Follow Us</h5>
-            <a href="https://www.facebook.com" target="_blank" class="bi bi-facebook"></a>
-            <a href="https://www.twitter.com" target="_blank" class="bi bi-twitter"></a>
-            <a href="https://www.instagram.com" target="_blank" class="bi bi-instagram"></a>
-          </div>
+	  <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-col about">
+          <h3>Fauji Foundation Hospital</h3>
+          <p>At FFH, we are convinced that ‘quality’ and ‘lowest cost’ are not mutually exclusive when it comes to healthcare delivery.</p>
+          <p>Our mission is to deliver high quality, affordable healthcare services to the broader population in India.</p>
+        </div>
+  
+        <div class="footer-col links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+            <li><a href="#">CONTACT US</a></li>
+            <li><a href="#">BOOK APPOINTMENT</a></li>
+            <li><a href="#">DOCTORS </a></li>
+            <li><a href="#">REGISTRATION</a></li>
+            <li><a href="login.html">LOGIN </a></li>
+          </ul>
+        </div>
+  
+        <div class="footer-col contact">
+          <h4>Contact Us</h4>
+          <p>Fauji Foundation Hospital</p>
+          <p>Ahmedabad, IN</p>
+          <p>Phone: 886 666 00555</p>
+          <p>Email: ffh@gmail.com</p>
         </div>
       </div>
-      <p>&copy; 2025 Fauji Foundation Hospital. All rights reserved.</p>
+  
+      <div class="footer-bottom">
+        <div class="footer-copy">
+          <p>2025 © All Rights Reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+        <div class="footer-icons">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-skype"></i>
+          <i class="fab fa-google-plus-g"></i>
+          <i class="fab fa-linkedin-in"></i>
+          <i class="fab fa-pinterest-p"></i>
+          <i class="fab fa-twitter"></i>
+        </div>
+      </div>
     </footer>
+  
+  
+  
+    <script>
+      function saveUserData() {
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const subject = document.getElementById("subject").value;
+    
+        // Store the data in localStorage
+        localStorage.setItem("userName", name);
+        localStorage.setItem("userEmail", email);
+        localStorage.setItem("userSubject", subject);
+    
+        // Alert to notify that the data is stored
+        alert("Registration successful! Data saved to localStorage.");
+      }
+    
+      // Attach the saveUserData function to the form's submit event
+      document.getElementById("contact-form").addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent the form from submitting normally
+        saveUserData(); // Call the function to save the data in localStorage
+      });
+    </script>
+    
+  
+
     
     
   </div>
@@ -174,7 +352,21 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/feather-icons"></script>
-  <script src="C:\Users\Acer\Desktop\group assignment\Group-C-Assignment\js\aboutus.js"></script>
+  <script src="../assets/js/aboutus.js"></script>
+
+  
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+
+
+
+</body>
 </body>
 </html>
 

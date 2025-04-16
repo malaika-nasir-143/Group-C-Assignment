@@ -82,3 +82,27 @@ document.querySelectorAll('footer .list-unstyled a').forEach(anchor => {
   });
 });
 
+// Core Values Section Animation
+document.addEventListener("DOMContentLoaded", function() {
+  const coreValuesSection = document.getElementById('coreValues');
+  
+  if (coreValuesSection) {
+    window.addEventListener('scroll', function() {
+      const position = coreValuesSection.getBoundingClientRect();
+      
+      if (position.top <= window.innerHeight && position.bottom >= 0) {
+        coreValuesSection.classList.add('animate__fadeIn');
+      }
+    });
+  }
+});
+
+
+  // Enable Bootstrap tooltips
+  document.addEventListener('DOMContentLoaded', function () {
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+  });
+
