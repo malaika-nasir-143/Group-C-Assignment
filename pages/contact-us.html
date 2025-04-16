@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - Fauji Foundation Hospital</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+    }
+
+    .navbar-brand {
+      font-size: 24px;
+      font-weight: bold;
+      color: #28a745 !important;
+    }
+
+    .nav-link {
+      color: #333 !important;
+      font-weight: 500;
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: #28a745 !important;
+    }
+
+    .header {
+      height: 50vh;
+      background: url('../assets/images/hospital-banner-doctors-staff-14949021.webp') no-repeat center center/cover;
+    }
+
+    .contact-form-wrapper {
+      background: #fff;
+      max-width: 600px;
+      margin: -80px auto 30px;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      z-index: 2;
+      position: relative;
+    }
+
+    .contact-form-wrapper h2 {
+      color: #28a745;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    button[type="submit"] {
+      width: 100%;
+      padding: 14px;
+      background: #28a745;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button[type="submit"]:hover {
+      background: #218838;
+    }
+
+    .info-section {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+
+    .contact-info, .map-container {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+      margin-bottom: 20px;
+    }
+
+    .contact-info h3,
+    .map-container h3 {
+      color: #28a745;
+      margin-bottom: 15px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 250px;
+      border: none;
+    }
+
+    .footer {
+      background-color: #1b1b1b;
+      color: #ccc;
+      padding: 40px 30px 20px;
+    }
+
+    .footer h3,
+    .footer h4 {
+      color: #71c94c;
+    }
+
+    .footer ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer ul li a {
+      color: #ccc;
+      text-decoration: none;
+    }
+
+    .footer ul li a:hover {
+      color: #71c94c;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #444;
+      margin-top: 20px;
+      padding-top: 15px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 15px;
+      align-items: center;
+    }
+
+    .footer-icons i {
+      color: #ccc;
+      margin: 0 10px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .footer-icons i:hover {
+      color: #71c94c;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Fauji Foundation Hospital</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+        <ul class="navbar-nav gap-3">
+          <li class="nav-item"><a class="nav-link" href="../index.html">HOME</a></li>
+          <li class="nav-item"><a class="nav-link" href="aboutus.html">ABOUT US</a></li>
+          <li class="nav-item"><a class="nav-link" href="doctors.html">DOCTORS</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact-us.html">CONTACT US</a></li>
+          <li class="nav-item"><a class="nav-link" href="registration.html">REGISTRATION</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">LOGIN</a></li>
+          <li class="nav-item"><a class="nav-link active text-success" href="book.html">BOOK APPOINTMENT</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="header"></div>
+
+  <!-- Contact Form -->
+  <div class="contact-form-wrapper">
+    <h2>Contact Us</h2>
+    <form action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="deca50b0-5e76-42a8-93fc-d789f43f6507">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+      <input type="hidden" name="redirect" value="http://127.0.0.1:5500/successfull.html">
+      <button type="submit">Submit Message</button>
+    </form>
+  </div>
+
+  <!-- Info and Map Section -->
+  <div class="info-section container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="contact-info">
+          <h3>Our Address</h3>
+          <p>123 Health Street, London, UK</p>
+          <p>Phone: +44 20 1234 5678</p>
+          <p>Email: info@hospital.com</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="map-container">
+          <h3>Find Us</h3>
+          <iframe loading="lazy" allowfullscreen
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2139.853615292652!2d-0.1115873!3d51.5225942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b9d7b55bb23%3A0x9c68003da5dd78d7!2sUniversity%20of%20ulster!5e1!3m2!1sen!2suk!4v1743762591924!5m2!1sen!2suk">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="row">
+      <div class="col-md-4">
+        <h3>Fauji Foundation Hospital</h3>
+        <p>We believe that quality and affordability can go hand-in-hand when it comes to delivering healthcare.</p>
+        <p>Our mission is to provide high-quality, low-cost healthcare to all.</p>
+      </div>
+      <div class="col-md-4">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="aboutus.html">ABOUT US</a></li>
+          <li><a href="#">CONTACT US</a></li>
+          <li><a href="#">BOOK APPOINTMENT</a></li>
+          <li><a href="#">DOCTORS</a></li>
+          <li><a href="#">REGISTRATION</a></li>
+          <li><a href="#">LOGIN</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h4>Contact Us</h4>
+        <p>Fauji Foundation Hospital, Ahmedabad, IN</p>
+        <p>Phone: 886 666 00555</p>
+        <p>Email: ffh@gmail.com</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom mt-4">
+      <div>
+        <p>2025 © All Rights Reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+      </div>
+      <div class="footer-icons">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-skype"></i>
+        <i class="fab fa-google-plus-g"></i>
+        <i class="fab fa-linkedin-in"></i>
+        <i class="fab fa-pinterest-p"></i>
+        <i class="fab fa-twitter"></i>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
